@@ -5,7 +5,7 @@ require_relative 'food_chain'
 class FoodChainTest < Minitest::Test
   attr_reader :song
   def song
-    @song = ::FoodChainSong.new
+    @song = FoodChainSong.new
   end
 
   def teardown
