@@ -1,5 +1,33 @@
 class FoodChainSong
   
+  def verses(start_verse,finish_verse)
+    # verse_to_return = []
+    # until start_verse == finish_verse
+    #   verse_to_return << verse(start_verse)    
+    #   start_verse += 1
+    # end
+    # verse_to_return.join
+    all_verses = []
+    all_verses << verse(1) 
+    all_verses << verse(2) 
+    all_verses << verse(3) 
+    all_verses << verse(4) 
+    all_verses << verse(5) 
+    all_verses << verse(6) 
+    all_verses << verse(7) 
+    all_verses << verse(8) 
+    all_verses.join
+  end
+
+  def sing
+    all_verses = [] 
+    (1..9).each do |x|
+      all_verses << verse(x)
+    end
+    all_verses.join 
+  end
+
+
   def verse(x)
     case x 
     when 1 
@@ -59,3 +87,5 @@ class FoodChainSong
   end
 end
 
+a = FoodChainSong.new
+a.verses(1,2)
