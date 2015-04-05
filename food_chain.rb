@@ -1,27 +1,14 @@
 class FoodChainSong
   
   def verses(start_verse,finish_verse)
-    # verse_to_return = []
-    # until start_verse == finish_verse
-    #   verse_to_return << verse(start_verse)    
-    #   start_verse += 1
-    # end
-    # verse_to_return.join
     all_verses = []
+
     until start_verse == finish_verse + 1
       all_verses << verse(start_verse)
       start_verse = start_verse + 1 
     end
-    all_verses.join
-    # all_verses << verse(1) 
-    # all_verses << verse(2) 
-    # all_verses << verse(3) 
-    # all_verses << verse(4) 
-    # all_verses << verse(5) 
-    # all_verses << verse(6) 
-    # all_verses << verse(7) 
-    # all_verses << verse(8) 
-    # all_verses.join
+    result = all_verses.join
+    result
   end
 
   def sing
