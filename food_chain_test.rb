@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require 'minitest/pride'
 require_relative 'food_chain'
 
 # rubocop:disable Metrics/MethodLength, Metrics/LineLength
@@ -18,7 +19,6 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_spider
-    skip
     expected = "I know an old lady who swallowed a spider.\nIt wriggled and jiggled and tickled inside her.\n" \
       "She swallowed the spider to catch the fly.\n" \
       "I don't know why she swallowed the fly. Perhaps she'll die.\n"
@@ -26,7 +26,6 @@ class FoodChainTest < Minitest::Test
   end
 
   def test_bird
-    skip
     expected = "I know an old lady who swallowed a bird.\n" \
       "How absurd to swallow a bird!\n" \
       "She swallowed the bird to catch the spider that wriggled and jiggled and tickled inside her.\n" \
