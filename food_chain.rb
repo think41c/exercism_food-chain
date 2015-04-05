@@ -20,10 +20,13 @@ class FoodChainSong
   end
 
   def sing
-    all_verses = [] 
-    (1..9).each do |x|
+    all_verses  = [] 
+    first_verse = 1
+    last_verse  = 9
+    (first_verse..last_verse).each do |x|
       all_verses << verse(x)
     end
+ 
     all_verses.join 
   end
 
